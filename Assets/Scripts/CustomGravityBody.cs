@@ -1,78 +1,6 @@
 using UnityEngine;
 
 /// <summary>
-/// Detects nearby surfaces and exposes a target normal for custom gravity systems.
-/// Split out as a reusable component so any Rigidbody can share detection logic.
-/// </summary>
-[DisallowMultipleComponent]
-public sealed class GravitySurfaceDetector : MonoBehaviour
-{
-    [Header("Detection")]
-    [SerializeField] private float sphereRadius = 0.35f;
-    [SerializeField] private float detectionDistance = 1.5f;
-    [SerializeField] private float castStartOffset = 0.15f;
-    [SerializeField] private LayerMask surfaceMask = ~0;
-    [SerializeField] private QueryTriggerInteraction triggerInteraction = QueryTriggerInteraction.Ignore;
-
-    public bool HasSurface { get; private set; }
-    public Vector3 TargetNormal { get; private set; } = Vector3.up;
-    public float SurfaceDistance { get; private set; }
-
-    /// <summary>
-    /// Performs a SphereCast from object's up axis toward its down axis.
-    /// Uses only value types in hot path (no managed allocations).
-    /// </summary>
-    public void Probe(Vector3 currentUp)
-    {
-        Vector3 castOrigin = transform.position + (currentUp * castStartOffset);
-        Vector3 castDirection = -currentUp;
-
-        bool hitSurface = Physics.SphereCast(
-            castOrigin,
-            sphereRadius,
-            castDirection,
-            out RaycastHit hit,
-            detectionDistance,
-            surfaceMask,
-            triggerInteraction
-        );
-
-        if (hitSurface)
-        {
-            HasSurface = true;
-            TargetNormal = hit.normal;
-            SurfaceDistance = hit.distance;
-        }
-        else
-        {
-            HasSurface = false;
-            SurfaceDistance = detectionDistance;
-        }
-    }
-
-#if UNITY_EDITOR
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = HasSurface ? Color.green : Color.yellow;
-
-        Vector3 up = transform.up;
-        Vector3 castOrigin = transform.position + (up * castStartOffset);
-        Vector3 castEnd = castOrigin - (up * detectionDistance);
-
-        Gizmos.DrawWireSphere(castOrigin, sphereRadius);
-        Gizmos.DrawLine(castOrigin, castEnd);
-        Gizmos.DrawWireSphere(castEnd, sphereRadius);
-
-        if (HasSurface)
-        {
-            Gizmos.color = Color.cyan;
-            Gizmos.DrawRay(castEnd, TargetNormal * 0.6f);
-        }
-    }
-#endif
-}
-
-/// <summary>
 /// Applies custom gravity to a Rigidbody and rotates the transform so its up axis
 /// matches the smoothed surface normal. Built for players but reusable for any body.
 /// </summary>
@@ -96,6 +24,7 @@ public sealed class CustomGravityBody : MonoBehaviour
     [Header("References (optional overrides)")]
     [SerializeField] private Rigidbody body;
     [SerializeField] private GravitySurfaceDetector detector;
+    [SerializeField] private FPSController controller;
 
     // This represents "up" for the object. Gravity force is applied in the opposite direction.
     private Vector3 currentGravityDirection = Vector3.up;
@@ -132,8 +61,15 @@ public sealed class CustomGravityBody : MonoBehaviour
 
         detector.Probe(currentGravityDirection);
 
-        Vector3 targetNormal = detector.HasSurface ? detector.TargetNormal : currentGravityDirection;
+        Vector3 targetNormal = currentGravityDirection;
 
+        if (detector.HasSurface)
+        {
+            if (Vector3.Angle(currentGravityDirection, detector.TargetNormal) > 2f)
+            {
+                targetNormal = detector.TargetNormal;
+            }
+        }
         // Smoothly blend current gravity-up direction to target surface normal for edge transitions.
         float normalBlend = 1f - Mathf.Exp(-normalLerpSpeed * Time.fixedDeltaTime);
         currentGravityDirection = Vector3.Slerp(currentGravityDirection, targetNormal, normalBlend).normalized;
@@ -152,11 +88,38 @@ public sealed class CustomGravityBody : MonoBehaviour
 
     private void AlignToGravityUp()
     {
-        Quaternion currentRotation = body.rotation;
-        Quaternion targetRotation = Quaternion.FromToRotation(transform.up, currentGravityDirection) * currentRotation;
+        Vector3 forwardProjected = Vector3.ProjectOnPlane(transform.forward, currentGravityDirection);
+
+        // Prevent zero vector (happens when looking straight up/down)
+        if (forwardProjected.sqrMagnitude < 0.001f)
+        {
+            forwardProjected = Vector3.ProjectOnPlane(transform.right, currentGravityDirection);
+        }
+
+        float yaw = controller != null ? controller.GetYaw() : 0f;
+
+        // Build rotation around current gravity up
+        Quaternion yawRotation = Quaternion.AngleAxis(yaw, currentGravityDirection);
+
+        // Forward direction based on yaw
+        Vector3 forward = yawRotation * Vector3.forward;
+
+        // Project onto surface
+        forward = Vector3.ProjectOnPlane(forward, currentGravityDirection).normalized;
+
+        if (forward.sqrMagnitude < 0.001f)
+        {
+            forward = Vector3.ProjectOnPlane(yawRotation * Vector3.right, currentGravityDirection);
+        }
+
+        if (forward.sqrMagnitude < 0.001f)
+            forward = Vector3.ProjectOnPlane(transform.right, currentGravityDirection);
+
+        Quaternion targetRotation = Quaternion.LookRotation(forward, currentGravityDirection);
 
         float rotationBlend = 1f - Mathf.Exp(-rotationSpeed * Time.fixedDeltaTime);
-        Quaternion smoothedRotation = Quaternion.Slerp(currentRotation, targetRotation, rotationBlend);
+
+        Quaternion smoothedRotation = Quaternion.Slerp(body.rotation, targetRotation, rotationBlend);
 
         body.MoveRotation(smoothedRotation);
     }
@@ -173,6 +136,7 @@ public sealed class CustomGravityBody : MonoBehaviour
 
     private bool EnsureInitialized()
     {
+        if (controller == null) controller = GetComponent<FPSController>();
         if (body == null) body = GetComponent<Rigidbody>();
         if (detector == null) detector = GetComponent<GravitySurfaceDetector>();
 
