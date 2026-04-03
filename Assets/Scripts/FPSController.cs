@@ -52,6 +52,9 @@ public class FPSController : MonoBehaviour
     bool isGrounded;
     bool isSprinting;
 
+    float yaw;
+    public float GetYaw() => yaw;
+
     System.Action<InputAction.CallbackContext> movePerformed;
     System.Action<InputAction.CallbackContext> moveCanceled;
     System.Action<InputAction.CallbackContext> sprintPerformed;
@@ -156,11 +159,14 @@ public class FPSController : MonoBehaviour
         Vector3 targetVelocity = moveDir * speed;
 
         Vector3 velocity = rb.linearVelocity;
-        Vector3 velocityChange = targetVelocity - new Vector3(velocity.x, 0, velocity.z);
+        Vector3 flatVelocity = Vector3.ProjectOnPlane(velocity, transform.up);
+
+        Vector3 velocityChange = targetVelocity - flatVelocity;
 
         rb.AddForce(velocityChange * (acceleration * control), ForceMode.VelocityChange);
 
-        Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z);
+        Vector3 up = transform.up;
+        Vector3 flatVel = Vector3.ProjectOnPlane(rb.linearVelocity, up);
 
         if (flatVel.magnitude > speed)
         {
@@ -172,7 +178,7 @@ public class FPSController : MonoBehaviour
     void Jump()
     {
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
 
         PlayJumpSound();
     }
@@ -185,15 +191,14 @@ public class FPSController : MonoBehaviour
 
     void ApplyBetterJump()
     {
-        if (rb.linearVelocity.y < 0)
+        float verticalSpeed = Vector3.Dot(rb.linearVelocity, transform.up);
+        if (verticalSpeed < 0)
         {
-            // Falling → faster fall
-            rb.AddForce(Vector3.down * fallMultiplier, ForceMode.Acceleration);
+            rb.AddForce(-transform.up * fallMultiplier, ForceMode.Acceleration);
         }
-        else if (rb.linearVelocity.y > 0 && !Keyboard.current.spaceKey.isPressed)
+        else if (verticalSpeed > 0 && !Keyboard.current.spaceKey.isPressed)
         {
-            // Released jump early → shorter jump
-            rb.AddForce(Vector3.down * lowJumpMultiplier, ForceMode.Acceleration);
+            rb.AddForce(-transform.up * lowJumpMultiplier, ForceMode.Acceleration);
         }
     }
 
@@ -204,6 +209,8 @@ public class FPSController : MonoBehaviour
         float mouseX = lookInput.x * mouseSensitivity * Time.deltaTime * 100f;
         float mouseY = lookInput.y * mouseSensitivity * Time.deltaTime * 100f;
 
+        yaw += mouseX;
+
         verticalLookRotation -= mouseY;
         verticalLookRotation = Mathf.Clamp(verticalLookRotation, -maxLookAngle, maxLookAngle);
 
@@ -212,8 +219,17 @@ public class FPSController : MonoBehaviour
             Debug.LogWarning("Assign Camera Pivot in Player Inspector.");
             return;
         }
-        cameraPivot.localRotation = Quaternion.Euler(verticalLookRotation, 0f, 0f);
-        transform.Rotate(transform.up * mouseX);// Use Vector3.up for global rotations
+
+        Quaternion targetRot = Quaternion.AngleAxis(verticalLookRotation, Vector3.right);
+
+        cameraPivot.localRotation = Quaternion.Slerp(
+            cameraPivot.localRotation,
+            targetRot,
+            15f * Time.deltaTime
+        );
+
+        Vector3 euler = cameraPivot.localEulerAngles;
+        cameraPivot.localRotation = Quaternion.Euler(euler.x, 0f, 0f);
     }
 
     // ---------------- FOOTSTEPS ----------------
