@@ -93,21 +93,17 @@ public sealed class CustomGravityBody : MonoBehaviour
     [SerializeField] private float stickForce = 20f;
     [SerializeField] private float stickDistance = 0.75f;
 
-    private Rigidbody body;
-    private GravitySurfaceDetector detector;
+    [Header("References (optional overrides)")]
+    [SerializeField] private Rigidbody body;
+    [SerializeField] private GravitySurfaceDetector detector;
 
     // This represents "up" for the object. Gravity force is applied in the opposite direction.
     private Vector3 currentGravityDirection = Vector3.up;
+    private bool loggedMissingReference;
 
     private void Awake()
     {
-        body = GetComponent<Rigidbody>();
-        detector = GetComponent<GravitySurfaceDetector>();
-
-        // Disable built-in gravity (required for custom directional gravity).
-        body.useGravity = false;
-
-        currentGravityDirection = transform.up;
+        EnsureInitialized();
     }
 
     private void OnValidate()
@@ -117,10 +113,23 @@ public sealed class CustomGravityBody : MonoBehaviour
         if (rotationSpeed < 0f) rotationSpeed = 0f;
         if (stickForce < 0f) stickForce = 0f;
         if (stickDistance < 0f) stickDistance = 0f;
+
+        if (body == null) body = GetComponent<Rigidbody>();
+        if (detector == null) detector = GetComponent<GravitySurfaceDetector>();
+    }
+
+    private void OnEnable()
+    {
+        EnsureInitialized();
     }
 
     private void FixedUpdate()
     {
+        if (!EnsureInitialized())
+        {
+            return;
+        }
+
         detector.Probe(currentGravityDirection);
 
         Vector3 targetNormal = detector.HasSurface ? detector.TargetNormal : currentGravityDirection;
@@ -161,4 +170,32 @@ public sealed class CustomGravityBody : MonoBehaviour
     /// Exposes current down/gravity pull direction.
     /// </summary>
     public Vector3 GetDownDirection() => -currentGravityDirection;
+
+    private bool EnsureInitialized()
+    {
+        if (body == null) body = GetComponent<Rigidbody>();
+        if (detector == null) detector = GetComponent<GravitySurfaceDetector>();
+
+        if (body == null || detector == null)
+        {
+            if (!loggedMissingReference)
+            {
+                Debug.LogError(
+                    $"{nameof(CustomGravityBody)} on '{name}' requires both {nameof(Rigidbody)} and {nameof(GravitySurfaceDetector)} components.",
+                    this
+                );
+                loggedMissingReference = true;
+            }
+            return false;
+        }
+
+        body.useGravity = false;
+
+        if (currentGravityDirection == Vector3.zero)
+        {
+            currentGravityDirection = transform.up;
+        }
+
+        return true;
+    }
 }
