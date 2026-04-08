@@ -3725,6 +3725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CustomGravityBody
   gravityForce: 30
   normalLerpSpeed: 10
+  probeInterval: 0.02
   rotationSpeed: 12
   stickToSurface: 1
   stickForce: 20
@@ -3780,7 +3781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87f91c2f23e5d9d44b4f4a04c9586128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHoldSystem
-  holdPoint: {fileID: 0}
+  holdPoint: {fileID: 511952713}
 --- !u!1 &1738062616
 GameObject:
   m_ObjectHideFlags: 0
@@ -5609,7 +5610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3396683318296928607, guid: 0259141e3a335b54daa796cc62b27979, type: 3}
       propertyPath: mouseSensitivity
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3530832551005263552, guid: 0259141e3a335b54daa796cc62b27979, type: 3}
       propertyPath: m_LocalPosition.x

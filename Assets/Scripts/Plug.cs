@@ -28,10 +28,12 @@ public class Plug : MonoBehaviour, IInteractable
         rb.isKinematic = true;
         col.enabled = false;
 
-        transform.SetParent(holdPoint, false); // ✅ FIX
+        transform.SetParent(null); // detach first
 
-        transform.localPosition = Vector3.zero;
-        transform.localRotation = Quaternion.identity;
+        transform.position = holdPoint.position;
+        transform.rotation = holdPoint.rotation;
+
+        transform.SetParent(holdPoint);
     }
 
     public void OnDropped()
