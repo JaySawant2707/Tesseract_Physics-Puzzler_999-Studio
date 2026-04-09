@@ -12,6 +12,8 @@ public sealed class CustomGravityBody : MonoBehaviour
     [Header("Gravity")]
     [SerializeField] private float gravityForce = 30f;
     [SerializeField] private float normalLerpSpeed = 10f;
+    [SerializeField] float probeInterval = 0.02f; // ~50fps default
+    float probeTimer;
 
     [Header("Rotation")]
     [SerializeField] private float rotationSpeed = 12f;
@@ -59,13 +61,22 @@ public sealed class CustomGravityBody : MonoBehaviour
             return;
         }
 
-        detector.Probe(currentGravityDirection);
+        probeTimer += Time.fixedDeltaTime;
+
+        if (probeTimer >= probeInterval)
+        {
+            detector.Probe(currentGravityDirection);
+            probeTimer = 0f;
+        }
 
         Vector3 targetNormal = currentGravityDirection;
 
         if (detector.HasSurface)
         {
-            if (Vector3.Angle(currentGravityDirection, detector.TargetNormal) > 2f)
+            float dot = Vector3.Dot(currentGravityDirection, detector.TargetNormal);
+
+            // Only change normal if surface is stable enough
+            if (dot < 0.999f && detector.SurfaceDistance < 1.2f)
             {
                 targetNormal = detector.TargetNormal;
             }
@@ -74,13 +85,15 @@ public sealed class CustomGravityBody : MonoBehaviour
         float normalBlend = 1f - Mathf.Exp(-normalLerpSpeed * Time.fixedDeltaTime);
         currentGravityDirection = Vector3.Slerp(currentGravityDirection, targetNormal, normalBlend).normalized;
 
+        Vector3 gravityDir = -currentGravityDirection;
+
         // Apply gravity opposite to the smoothed "up" direction.
-        body.AddForce(-currentGravityDirection * gravityForce, ForceMode.Acceleration);
+        body.AddForce(gravityDir * gravityForce, ForceMode.Acceleration);
 
         if (stickToSurface && detector.HasSurface && detector.SurfaceDistance <= stickDistance)
         {
             // Extra downward force to reduce micro-floating near edges/uneven terrain.
-            body.AddForce(-currentGravityDirection * stickForce, ForceMode.Acceleration);
+            body.AddForce(gravityDir * stickForce, ForceMode.Acceleration);
         }
 
         AlignToGravityUp();

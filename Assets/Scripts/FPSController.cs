@@ -206,8 +206,14 @@ public class FPSController : MonoBehaviour
 
     void HandleLook()
     {
-        float mouseX = lookInput.x * mouseSensitivity * Time.deltaTime * 100f;
-        float mouseY = lookInput.y * mouseSensitivity * Time.deltaTime * 100f;
+        Vector2 input = lookInput;
+
+        // Clamp diagonal speed
+        if (input.sqrMagnitude > 1f)
+            input.Normalize();
+
+        float mouseX = input.x * mouseSensitivity;
+        float mouseY = input.y * mouseSensitivity;
 
         yaw += mouseX;
 
@@ -238,11 +244,16 @@ public class FPSController : MonoBehaviour
     {
         if (!isGrounded) return;
 
-        Vector3 horizontalVel = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z);
+        Vector3 up = transform.up;
 
-        if (horizontalVel.magnitude < 0.1f) return;
+        // Surface-relative movement
+        Vector3 horizontalVel = Vector3.ProjectOnPlane(rb.linearVelocity, up);
 
-        float speedFactor = horizontalVel.magnitude / moveSpeed;
+        float speed = horizontalVel.magnitude;
+
+        if (speed < 0.1f) return;
+
+        float speedFactor = speed / moveSpeed;
 
         float interval = baseStepInterval;
 
@@ -290,7 +301,7 @@ public class FPSController : MonoBehaviour
 
     void PlayLandingSound()
     {
-        float fallSpeed = Mathf.Abs(rb.linearVelocity.y);
+        float fallSpeed = Mathf.Abs(Vector3.Dot(rb.linearVelocity, transform.up));
 
         if (fallSpeed < 2f) return;
 
