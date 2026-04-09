@@ -7,9 +7,6 @@ public class PlayerInteraction : MonoBehaviour
     public float interactDistance = 4f;
     public LayerMask interactLayer;
 
-    [Header("References")]
-    public Camera playerCamera;
-
     IInteractable currentInteractable;
     Outline currentOutline;
 
@@ -19,23 +16,30 @@ public class PlayerInteraction : MonoBehaviour
 
         if (Keyboard.current.eKey.wasPressedThisFrame)
         {
+            PlayerHoldSystem player = FindFirstObjectByType<PlayerHoldSystem>();
+
+            // If looking at interactable → use it (socket, etc.)
             if (currentInteractable != null)
             {
                 currentInteractable.Interact();
+                return;
+            }
+
+            // Otherwise → drop if holding
+            if (player != null && player.HasObject())
+            {
+                player.ClearHeld();
             }
         }
     }
 
     void DetectInteractable()
     {
-        Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
-        RaycastHit hit;
+        Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
 
-        if (Physics.Raycast(ray, out hit, interactDistance, interactLayer))
+        if (Physics.Raycast(ray, out RaycastHit hit, interactDistance, interactLayer))
         {
-            IInteractable interactable = hit.collider.GetComponent<IInteractable>();
-
-            if (interactable != null)
+            if (hit.collider.TryGetComponent<IInteractable>(out var interactable))
             {
                 if (currentInteractable != interactable)
                 {
@@ -49,7 +53,6 @@ public class PlayerInteraction : MonoBehaviour
                         currentOutline.enabled = true;
                     }
                 }
-
                 return;
             }
         }
