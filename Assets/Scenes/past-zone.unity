@@ -174,6 +174,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -890390299964705851, guid: f9fbf845e7502a74f9f92322bf6acead, type: 3}
+    - {fileID: 3290470076122750494, guid: f9fbf845e7502a74f9f92322bf6acead, type: 3}
+    - {fileID: -282147949774114281, guid: f9fbf845e7502a74f9f92322bf6acead, type: 3}
+    - {fileID: -2109550303948244212, guid: f9fbf845e7502a74f9f92322bf6acead, type: 3}
+    - {fileID: -8087368382549996947, guid: f9fbf845e7502a74f9f92322bf6acead, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9fbf845e7502a74f9f92322bf6acead, type: 3}
@@ -544,6 +548,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: -4932982780345470907, guid: 7df487850f0b0c1458246827cb92f924, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b250510076bcba84cabea72cc8b2ba25, type: 2}
+=======
     - target: {fileID: -5076484507258936684, guid: 7df487850f0b0c1458246827cb92f924, type: 3}
       propertyPath: m_Lightmapping
       value: 2
@@ -552,6 +562,7 @@ PrefabInstance:
       propertyPath: m_Lightmapping
       value: 2
       objectReference: {fileID: 0}
+>>>>>>> main
     - target: {fileID: 919132149155446097, guid: 7df487850f0b0c1458246827cb92f924, type: 3}
       propertyPath: m_Name
       value: 'endurance spaceship '
