@@ -13,6 +13,9 @@ public struct StarConnection
 public class ConstellationPuzzle : MonoBehaviour
 {
     public LineRenderer linePrefab;
+    [Header("Snapping")]
+    [SerializeField] float snapRadius = 0.5f;
+    [SerializeField] LayerMask starLayer;
 
     [Header("Guide Lines")]
     public LineRenderer guideLinePrefab;
@@ -58,13 +61,29 @@ public class ConstellationPuzzle : MonoBehaviour
 
         if (mouse.leftButton.wasReleasedThisFrame)
         {
-            StarNode star = GetStarUnderMouse();
+            StarNode target = GetSnappedStarFromMouse();
 
-            if (star != null && currentStar != null)
-                TryConnect(currentStar, star);
+            if (target != null && currentStar != null)
+                TryConnect(currentStar, target);
 
             EndConnection();
         }
+    }
+
+    StarNode GetSnappedStarFromMouse()
+    {
+        Vector2 mousePos = Mouse.current.position.ReadValue();
+        Ray ray = Camera.main.ScreenPointToRay(mousePos);
+
+        Plane plane = new Plane(-Camera.main.transform.forward, currentStar.transform.position);
+
+        if (plane.Raycast(ray, out float distance))
+        {
+            Vector3 worldPoint = ray.GetPoint(distance);
+            return GetSnappedStar(worldPoint);
+        }
+
+        return null;
     }
 
     StarNode GetStarUnderMouse()
@@ -97,16 +116,25 @@ public class ConstellationPuzzle : MonoBehaviour
     void UpdateLinePreview()
     {
         Vector2 mousePos = Mouse.current.position.ReadValue();
-
         Ray ray = Camera.main.ScreenPointToRay(mousePos);
 
-        // Create a plane facing camera
         Plane plane = new Plane(-Camera.main.transform.forward, currentStar.transform.position);
 
         if (plane.Raycast(ray, out float distance))
         {
-            Vector3 point = ray.GetPoint(distance);
-            currentLine.SetPosition(1, point);
+            Vector3 worldPoint = ray.GetPoint(distance);
+
+            // 🔥 SNAP CHECK
+            StarNode snapped = GetSnappedStar(worldPoint);
+
+            if (snapped != null && snapped != currentStar)
+            {
+                currentLine.SetPosition(1, snapped.transform.position);
+            }
+            else
+            {
+                currentLine.SetPosition(1, worldPoint);
+            }
         }
     }
 
@@ -220,5 +248,29 @@ public class ConstellationPuzzle : MonoBehaviour
 
             guideLines.Add(line);
         }
+    }
+
+    StarNode GetSnappedStar(Vector3 worldPoint)
+    {
+        Collider[] hits = Physics.OverlapSphere(worldPoint, snapRadius, starLayer);
+
+        float closestDist = float.MaxValue;
+        StarNode closest = null;
+
+        foreach (var hit in hits)
+        {
+            StarNode star = hit.GetComponent<StarNode>();
+            if (star == null) continue;
+
+            float dist = Vector3.Distance(worldPoint, star.transform.position);
+
+            if (dist < closestDist)
+            {
+                closestDist = dist;
+                closest = star;
+            }
+        }
+
+        return closest;
     }
 }
