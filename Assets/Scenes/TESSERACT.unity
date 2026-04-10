@@ -2726,6 +2726,7 @@ MonoBehaviour:
   validConnections:
   - {fileID: 1931521234}
   - {fileID: 1406544359}
+  - {fileID: 1373323990}
 --- !u!135 &910957755
 SphereCollider:
   m_ObjectHideFlags: 0
