@@ -16,8 +16,8 @@ TagManager:
   - HeldObject
   - Player
   - Constellation
-  - 
-  - 
+  - 2D Camera Include
+  - 2D Camera Exclude
   - 
   - 
   - 
