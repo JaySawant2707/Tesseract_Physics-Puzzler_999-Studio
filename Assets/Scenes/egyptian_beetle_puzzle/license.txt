@@ -1,0 +1,11 @@
+Model Information:
+* title:	Egyptian Beetle Puzzle
+* source:	https://sketchfab.com/3d-models/egyptian-beetle-puzzle-694fce8c882b4bf1bb1b06b19fc6f132
+* author:	Andres Piroso (https://sketchfab.com/andrespiroso)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Egyptian Beetle Puzzle" (https://sketchfab.com/3d-models/egyptian-beetle-puzzle-694fce8c882b4bf1bb1b06b19fc6f132) by Andres Piroso (https://sketchfab.com/andrespiroso) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
