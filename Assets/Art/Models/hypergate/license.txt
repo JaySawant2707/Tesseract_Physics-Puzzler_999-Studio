@@ -1,0 +1,11 @@
+Model Information:
+* title:	Hypergate
+* source:	https://sketchfab.com/3d-models/hypergate-091e8a66b797452bb478fdf3697f7191
+* author:	Inditrion Dradnon (https://sketchfab.com/dradnon)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Hypergate" (https://sketchfab.com/3d-models/hypergate-091e8a66b797452bb478fdf3697f7191) by Inditrion Dradnon (https://sketchfab.com/dradnon) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
