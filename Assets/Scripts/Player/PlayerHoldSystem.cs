@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerHoldSystem : MonoBehaviour
 {
     public Transform holdPoint;
+    public Collider playerCollider;
 
     private Plug currentPlug;
 
@@ -23,12 +24,18 @@ public class PlayerHoldSystem : MonoBehaviour
 
     public void PickUp(Plug plug)
     {
+        if (currentPlug != null) return;
+
         currentPlug = plug;
         plug.OnPicked(holdPoint);
-    }
+    }   
 
     public void ClearHeld()
     {
-        currentPlug = null;
+        if (currentPlug != null)
+        {
+            currentPlug.OnDropped();
+            currentPlug = null;
+        }
     }
 }

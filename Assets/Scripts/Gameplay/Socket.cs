@@ -29,10 +29,10 @@ public class Socket : MonoBehaviour, IInteractable
         isOccupied = true;
 
         plug.transform.SetParent(null);
-        plug.transform.position = snapPoint.position;
-        plug.transform.rotation = snapPoint.rotation;
-
+        plug.transform.SetPositionAndRotation(snapPoint.position, snapPoint.rotation);
         plug.GetComponent<Rigidbody>().isKinematic = true;
+
+        plug.OnPlugged();
 
         onConnected?.Invoke();
     }
