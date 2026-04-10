@@ -576,7 +576,7 @@ GameObject:
   - component: {fileID: 244016189}
   - component: {fileID: 244016186}
   - component: {fileID: 244016185}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Star 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1176,7 +1176,7 @@ GameObject:
   - component: {fileID: 545006876}
   - component: {fileID: 545006875}
   - component: {fileID: 545006874}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1735,7 +1735,7 @@ GameObject:
   - component: {fileID: 827259459}
   - component: {fileID: 827259456}
   - component: {fileID: 827259455}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Star 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2823,7 +2823,7 @@ GameObject:
   - component: {fileID: 1083972045}
   - component: {fileID: 1083972042}
   - component: {fileID: 1083972041}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Star 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3106,7 +3106,7 @@ GameObject:
   - component: {fileID: 1109758905}
   - component: {fileID: 1109758902}
   - component: {fileID: 1109758901}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Star 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3176,7 +3176,7 @@ GameObject:
   - component: {fileID: 1149590996}
   - component: {fileID: 1149590995}
   - component: {fileID: 1149590994}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3785,8 +3785,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.013713837
-        value: 0.21031952
+        time: 0
+        value: 0.23096466
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -3863,7 +3863,7 @@ GameObject:
   - component: {fileID: 1434262682}
   - component: {fileID: 1434262681}
   - component: {fileID: 1434262680}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4087,7 +4087,7 @@ GameObject:
   - component: {fileID: 1503862481}
   - component: {fileID: 1503862480}
   - component: {fileID: 1503862479}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4972,7 +4972,7 @@ GameObject:
   - component: {fileID: 1642599088}
   - component: {fileID: 1642599087}
   - component: {fileID: 1642599086}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5083,7 +5083,7 @@ GameObject:
   - component: {fileID: 1689383568}
   - component: {fileID: 1689383565}
   - component: {fileID: 1689383564}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Star 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5632,7 +5632,7 @@ GameObject:
   - component: {fileID: 1849682655}
   - component: {fileID: 1849682654}
   - component: {fileID: 1849682653}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6105,7 +6105,7 @@ GameObject:
   - component: {fileID: 1885821571}
   - component: {fileID: 1885821568}
   - component: {fileID: 1885821567}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Star 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6511,7 +6511,7 @@ GameObject:
   - component: {fileID: 1949827880}
   - component: {fileID: 1949827879}
   - component: {fileID: 1949827878}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6734,7 +6734,7 @@ GameObject:
   - component: {fileID: 1978095018}
   - component: {fileID: 1978095015}
   - component: {fileID: 1978095014}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Star 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7345,6 +7345,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ConstellationPuzzle
   linePrefab: {fileID: 98076187}
+  snapRadius: 0.5
+  starLayer:
+    serializedVersion: 2
+    m_Bits: 1024
   guideLinePrefab: {fileID: 1404627341}
   requiredConnections:
   - from: {fileID: 1978095014}
