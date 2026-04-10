@@ -9,9 +9,12 @@ public class PlayerInteraction : MonoBehaviour
 
     IInteractable currentInteractable;
     Outline currentOutline;
+    public bool isBlocked;
 
     void Update()
     {
+        if (isBlocked) return;
+        
         DetectInteractable();
 
         if (Keyboard.current.eKey.wasPressedThisFrame)
