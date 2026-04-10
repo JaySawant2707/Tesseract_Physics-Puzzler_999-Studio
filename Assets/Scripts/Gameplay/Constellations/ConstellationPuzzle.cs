@@ -14,6 +14,10 @@ public class ConstellationPuzzle : MonoBehaviour
 {
     public LineRenderer linePrefab;
 
+    [Header("Guide Lines")]
+    public LineRenderer guideLinePrefab;
+    private List<LineRenderer> guideLines = new();
+
     private StarNode currentStar;
     private LineRenderer currentLine;
 
@@ -179,6 +183,7 @@ public class ConstellationPuzzle : MonoBehaviour
     {
         isActive = true;
         ResetPuzzle();
+        CreateGuideLines();
     }
 
     public void Deactivate()
@@ -193,5 +198,27 @@ public class ConstellationPuzzle : MonoBehaviour
 
         spawnedLines.Clear();
         playerConnections.Clear();
+
+        // remove guide lines too
+        foreach (var g in guideLines)
+            Destroy(g.gameObject);
+
+        guideLines.Clear();
+    }
+
+    // ================= Guide =================
+
+    void CreateGuideLines()
+    {
+        foreach (var connection in requiredConnections)
+        {
+            LineRenderer line = Instantiate(guideLinePrefab, transform);
+
+            line.positionCount = 2;
+            line.SetPosition(0, connection.from.transform.position);
+            line.SetPosition(1, connection.to.transform.position);
+
+            guideLines.Add(line);
+        }
     }
 }
