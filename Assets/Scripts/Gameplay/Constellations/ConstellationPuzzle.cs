@@ -13,6 +13,7 @@ public struct StarConnection
 public class ConstellationPuzzle : MonoBehaviour
 {
     public LineRenderer linePrefab;
+    [SerializeField] GameObject orb;
     [Header("Snapping")]
     [SerializeField] float snapRadius = 0.5f;
     [SerializeField] LayerMask starLayer;
@@ -31,6 +32,11 @@ public class ConstellationPuzzle : MonoBehaviour
     public event Action OnSolved;
 
     private bool isActive = false;
+
+    void Start()
+    {
+        orb.SetActive(false);
+    }
 
     void Update()
     {
@@ -199,7 +205,7 @@ public class ConstellationPuzzle : MonoBehaviour
 
     void Solve()
     {
-        Debug.Log("Puzzle Solved!");
+        orb.SetActive(true);
         isActive = false;
 
         OnSolved?.Invoke();

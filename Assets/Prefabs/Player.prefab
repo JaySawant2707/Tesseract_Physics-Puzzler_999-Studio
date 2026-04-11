@@ -201,7 +201,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 6418180475301049370, guid: ef05be445e3284c9c93fe860c0837942, type: 2}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -435,7 +435,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   cameraPivot: {fileID: 13849233047187166}
-  mouseSensitivity: 2
+  mouseSensitivity: 1.5
   maxLookAngle: 80
   footstepSource: {fileID: 6994691002522872951}
   baseStepInterval: 0.5
