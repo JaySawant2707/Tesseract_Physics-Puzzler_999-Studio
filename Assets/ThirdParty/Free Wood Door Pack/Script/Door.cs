@@ -16,6 +16,7 @@ namespace DoorScript
 		public AudioClip openDoor, closeDoor;
 		public Portal portal;
 		public Collider col;
+		public bool canInteract = true;
 		// Use this for initialization
 		void Start()
 		{
@@ -50,6 +51,7 @@ namespace DoorScript
 
 		public void Interact()
 		{
+			if (!canInteract) return;
 			OpenDoor();
 			portal.enabled = open;
 			col.enabled = open;
