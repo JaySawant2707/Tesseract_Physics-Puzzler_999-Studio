@@ -45,6 +45,8 @@ namespace DoorScript
 		public void OpenDoor()
 		{
 			open = !open;
+			portal.enabled = open;
+			col.enabled = open;
 			asource.clip = open ? openDoor : closeDoor;
 			asource.Play();
 		}

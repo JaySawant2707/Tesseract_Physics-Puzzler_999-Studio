@@ -461,7 +461,7 @@ Transform:
   m_GameObject: {fileID: 87226191}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -149.43454, y: 49.3, z: -2.9075022}
+  m_LocalPosition: {x: -149.43454, y: 51.61, z: -2.9075022}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -820,7 +820,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ConstellationPuzzle
   linePrefab: {fileID: 103720082}
-  orb: {fileID: 1947475507}
   snapRadius: 0.5
   starLayer:
     serializedVersion: 2
@@ -2784,6 +2783,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2f348aa8ff6e0b4d8b489c8e8cfdf5d, type: 3}
+--- !u!1 &460732629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8087218179242751276, guid: a034c4519a4311742b85381ad80a4d11, type: 3}
+  m_PrefabInstance: {fileID: 8641093865078774012}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &463592919 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f2f348aa8ff6e0b4d8b489c8e8cfdf5d, type: 3}
@@ -3321,7 +3325,7 @@ PrefabInstance:
     - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
       propertyPath: conversation.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: f035ee578a5455047b83d97c25a13b28, type: 3}
+      objectReference: {fileID: 8300000, guid: de4bc975f0e1e924490dbbbc47e8973e, type: 3}
     - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
       propertyPath: conversation.Array.data[0].subtitle
       value: To proceed, you must solve a series of puzzles. Only then will the pathway
@@ -3468,7 +3472,6 @@ GameObject:
   - component: {fileID: 752789805}
   - component: {fileID: 752789804}
   - component: {fileID: 752789803}
-  - component: {fileID: 752789802}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -3476,27 +3479,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &752789802
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752789801}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &752789803
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3867,7 +3849,7 @@ PrefabInstance:
     - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
       propertyPath: conversation.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: f035ee578a5455047b83d97c25a13b28, type: 3}
+      objectReference: {fileID: 8300000, guid: 73fe881bcc730d642b338c13e73e135a, type: 3}
     - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
       propertyPath: conversation.Array.data[0].subtitle
       value: We are currently inside the core of a black hole. This space appears
@@ -6533,7 +6515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3530832551005263552, guid: 0259141e3a335b54daa796cc62b27979, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 48.8
+      value: 51.11
       objectReference: {fileID: 0}
     - target: {fileID: 3530832551005263552, guid: 0259141e3a335b54daa796cc62b27979, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7948,6 +7930,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 731917776111cfd4e8e238be7a676f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1773528431 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7317661215458512031, guid: a034c4519a4311742b85381ad80a4d11, type: 3}
+  m_PrefabInstance: {fileID: 8641093865078774012}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1790116515 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f2f348aa8ff6e0b4d8b489c8e8cfdf5d, type: 3}
@@ -8695,11 +8682,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f522f308d2e0127469e24e29d153845c, type: 3}
---- !u!1 &1947475507 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 393297536860680915, guid: f522f308d2e0127469e24e29d153845c, type: 3}
-  m_PrefabInstance: {fileID: 1947475506}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1977768222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8957,6 +8939,73 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cdfdb2b7a4ba0a4bb715af8e3784f1b, type: 3}
+--- !u!1 &1991239999
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1991240000}
+  - component: {fileID: 1991240002}
+  - component: {fileID: 1991240001}
+  m_Layer: 0
+  m_Name: portal (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1991240000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991239999}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.381897, y: 0.69200134, z: 7.2799206}
+  m_LocalScale: {x: 1.39, y: 1.39, z: 1.39}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 991757441054488191}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1991240001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991239999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f293153c3c7aedc4e80abfbece969bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Portal
+  nextSceneIndex: 6
+--- !u!65 &1991240002
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991239999}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.99458313, y: 2.0296993, z: 0.0036167838}
+  m_Center: {x: -0.5880127, y: 0.27639294, z: -0.03}
 --- !u!4 &2020018055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9cdfdb2b7a4ba0a4bb715af8e3784f1b, type: 3}
@@ -9805,6 +9854,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1991240000}
   - {fileID: 7794108299289578444}
   - {fileID: 1444325926}
   - {fileID: 1824456061}
@@ -12147,6 +12197,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 460732629}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!4 &7794108299289578444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6033786563171041474, guid: a034c4519a4311742b85381ad80a4d11, type: 3}
@@ -12568,6 +12630,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4795878193487998433, guid: a034c4519a4311742b85381ad80a4d11, type: 3}
+      propertyPath: asource
+      value: 
+      objectReference: {fileID: 1773528431}
     - target: {fileID: 6033786563171041474, guid: a034c4519a4311742b85381ad80a4d11, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.39

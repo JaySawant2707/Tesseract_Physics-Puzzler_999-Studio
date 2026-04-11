@@ -29,9 +29,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 3361805852366659563}
   - {fileID: 8467627156058571690}
   - {fileID: 4745502834268477772}
-  - {fileID: 3361805852366659563}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1348322582275299559
@@ -469,6 +469,7 @@ MonoBehaviour:
   closeDoor: {fileID: 8300000, guid: bc37ad25465405a428a26ff0facd9a7b, type: 3}
   portal: {fileID: 426344849888109232}
   col: {fileID: 6783362886889318246}
+  canInteract: 1
 --- !u!114 &2670734879500144944
 MonoBehaviour:
   m_ObjectHideFlags: 0
