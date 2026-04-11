@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2D_World.unity
     guid: 05415fafe5cfd214ba2ce0db542e3a1a
+  - enabled: 1
+    path: Assets/Scenes/whire-room.unity
+    guid: 7284f06669043084c949fccc23abf277
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 624965d855c042549809bf8225cd1b29, type: 2}
   m_UseUCBPForAssetBundles: 0

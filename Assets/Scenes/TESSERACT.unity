@@ -9087,7 +9087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f293153c3c7aedc4e80abfbece969bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Portal
-  nextSceneIndex: 0
+  nextSceneIndex: 5
 --- !u!1 &3920099190905850732
 GameObject:
   m_ObjectHideFlags: 0
