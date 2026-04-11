@@ -694,6 +694,143 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &155948808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 155948809}
+  - component: {fileID: 155948811}
+  - component: {fileID: 155948810}
+  m_Layer: 5
+  m_Name: Text (TMP) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &155948809
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155948808}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1107724455}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 84, y: -448}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &155948810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155948808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &155948811
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155948808}
+  m_CullTransparentMesh: 1
 --- !u!1 &238664095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,6 +1982,1181 @@ RectTransform:
   m_AnchoredPosition: {x: 10.214, y: 2.4507}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &940311379
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1723499378478827603, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7.1461
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723499378478827603, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723499378478827603, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723499378478827603, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723499378478827603, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723499378478827603, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723499378478827603, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723499378478827603, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723499378478827603, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723499378478827603, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723499378478827603, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.size
+      value: 111
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[5].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[6].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[7].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[8].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[9].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[10].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[11].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[12].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[13].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[14].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[15].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[16].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[17].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[18].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[19].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[20].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[21].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[22].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[23].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[24].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[25].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[26].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[27].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[28].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[29].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[30].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[31].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[32].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[33].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[34].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[35].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[36].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[37].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[38].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[39].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[40].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[41].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[42].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[43].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[44].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[45].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[46].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[47].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[48].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[49].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[50].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[51].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[52].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[53].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[54].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[55].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[56].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[57].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[58].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[59].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[60].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[61].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[62].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[63].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[64].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[65].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[66].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[67].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[68].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[69].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[70].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[71].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[72].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[73].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[74].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[75].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[76].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[77].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[78].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[79].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[80].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[81].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[82].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[83].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[84].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[85].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[86].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[87].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[88].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[89].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[90].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[91].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[92].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[93].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[94].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[95].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[96].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[97].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[98].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[99].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[100].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[101].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[102].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[103].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[104].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[105].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[106].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[107].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[108].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[109].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[110].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc21cac58c40ae64db1dd034aa3942be, type: 3}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[0].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[1].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[2].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[3].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[4].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[5].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[6].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[7].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[8].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[9].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[10].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[11].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[12].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[13].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[14].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[15].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[16].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[17].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[18].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[19].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[20].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[21].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[22].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[23].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[24].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[25].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[26].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[27].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[28].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[29].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[30].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[31].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[32].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[33].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[34].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[35].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[36].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[37].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[38].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[39].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[40].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[41].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[42].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[43].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[44].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[45].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[46].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[47].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[48].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[49].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[50].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[51].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[52].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[53].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[54].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[55].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[56].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[57].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[58].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[59].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[60].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[61].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[62].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[63].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[64].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[65].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[66].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[67].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[68].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[69].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[70].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[71].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[72].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[73].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[74].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[75].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[76].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[77].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[78].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[79].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[80].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[81].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[82].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[83].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[84].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[85].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[86].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[87].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[88].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[89].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[90].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[91].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[92].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[93].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[94].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[95].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[96].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[97].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[98].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[99].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[100].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[101].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[102].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[103].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[104].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[105].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[106].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[107].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[108].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[109].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: conversation.Array.data[110].subtitle
+      value: "Fascinating\u2026 you are now experiencing a convergence of two-dimensional
+        and three-dimensional space.\nYou have acquired a device \u2014 a GameBoy
+        \u2014 which displays the 2D world, while you remain in 3D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5401790688219008514, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: m_Name
+      value: Narrator Trigger
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
 --- !u!1001 &981691115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2082,6 +3394,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1229682804}
+  - {fileID: 155948809}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2089,6 +3402,63 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &1139853778
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2907642965274488836, guid: 1d505d81882f1744a891109bf2efd86f, type: 3}
+      propertyPath: m_Name
+      value: Narrator Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8784003750003525897, guid: 1d505d81882f1744a891109bf2efd86f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.10023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8784003750003525897, guid: 1d505d81882f1744a891109bf2efd86f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8784003750003525897, guid: 1d505d81882f1744a891109bf2efd86f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -21.19236
+      objectReference: {fileID: 0}
+    - target: {fileID: 8784003750003525897, guid: 1d505d81882f1744a891109bf2efd86f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8784003750003525897, guid: 1d505d81882f1744a891109bf2efd86f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8784003750003525897, guid: 1d505d81882f1744a891109bf2efd86f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8784003750003525897, guid: 1d505d81882f1744a891109bf2efd86f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8784003750003525897, guid: 1d505d81882f1744a891109bf2efd86f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8784003750003525897, guid: 1d505d81882f1744a891109bf2efd86f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8784003750003525897, guid: 1d505d81882f1744a891109bf2efd86f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1d505d81882f1744a891109bf2efd86f, type: 3}
 --- !u!1001 &1153230489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3967,3 +5337,5 @@ SceneRoots:
   - {fileID: 1536337824}
   - {fileID: 238664097}
   - {fileID: 5739313038486144736}
+  - {fileID: 1139853778}
+  - {fileID: 940311379}
