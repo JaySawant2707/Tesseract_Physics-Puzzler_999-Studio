@@ -68,15 +68,27 @@ public class WorldCubes : MonoBehaviour
         Transform spawn4)
     {
         if (hasCube1 && cube1Prefab && spawn1)
+        {
             Instantiate(cube1Prefab, spawn1.position, spawn1.rotation);
+            hasCube1 = false;
+        }
 
         if (hasCube2 && cube2Prefab && spawn2)
+        {
             Instantiate(cube2Prefab, spawn2.position, spawn2.rotation);
+            hasCube2 = false;
+        }
 
         if (hasCube3 && cube3Prefab && spawn3)
+        {
             Instantiate(cube3Prefab, spawn3.position, spawn3.rotation);
+            hasCube3 = false;
+        }
 
         if (hasCube4 && cube4Prefab && spawn4)
+        {
             Instantiate(cube4Prefab, spawn4.position, spawn4.rotation);
+            hasCube4 = false;
+        }
     }
 }

@@ -853,6 +853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ConstellationPuzzle
   linePrefab: {fileID: 103720082}
+  orb: {fileID: 0}
   snapRadius: 0.5
   starLayer:
     serializedVersion: 2
