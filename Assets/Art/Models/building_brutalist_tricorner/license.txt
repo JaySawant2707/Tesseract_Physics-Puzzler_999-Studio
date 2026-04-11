@@ -1,0 +1,11 @@
+Model Information:
+* title:	Building Brutalist TriCorner
+* source:	https://sketchfab.com/3d-models/building-brutalist-tricorner-a0923ae832474539bc856a8c6d3acc00
+* author:	Nicolai Kilstrup (https://sketchfab.com/nkilstrup)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Building Brutalist TriCorner" (https://sketchfab.com/3d-models/building-brutalist-tricorner-a0923ae832474539bc856a8c6d3acc00) by Nicolai Kilstrup (https://sketchfab.com/nkilstrup) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
