@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class PlatfomStickyness : MonoBehaviour
 {
+    public GameObject p;
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.transform.SetParent(transform);
+            other.transform.SetParent(p.transform);
         }
     }
 
@@ -14,7 +15,7 @@ public class PlatfomStickyness : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.transform.SetParent(transform);
+            collision.transform.SetParent(p.transform);
         }
     }
 
