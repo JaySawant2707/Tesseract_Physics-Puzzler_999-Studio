@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Tesseract.slnx"
+    "dotnet.defaultSolution": "Tesseract_Physics-Puzzler_999-Studio.slnx"
 }
