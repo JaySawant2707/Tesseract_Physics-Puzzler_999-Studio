@@ -461,7 +461,7 @@ Transform:
   m_GameObject: {fileID: 87226191}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -149.43454, y: 51.61, z: -2.9075022}
+  m_LocalPosition: {x: -149.43454, y: 50.24, z: -2.9075022}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3840,7 +3840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
       propertyPath: narrationID
-      value: 2
+      value: 777
       objectReference: {fileID: 0}
     - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
       propertyPath: conversation.Array.size
@@ -4745,6 +4745,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1723499378478827603, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.40603
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723499378478827603, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.40603
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723499378478827603, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.40603
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723499378478827603, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
       propertyPath: m_LocalPosition.x
       value: -149.65135
       objectReference: {fileID: 0}
@@ -4754,7 +4766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1723499378478827603, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.890664
+      value: -3.85
       objectReference: {fileID: 0}
     - target: {fileID: 1723499378478827603, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4786,7 +4798,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
       propertyPath: narrationID
-      value: 1
+      value: 888
       objectReference: {fileID: 0}
     - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
       propertyPath: conversation.Array.size
@@ -6515,7 +6527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3530832551005263552, guid: 0259141e3a335b54daa796cc62b27979, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 51.11
+      value: 49.74
       objectReference: {fileID: 0}
     - target: {fileID: 3530832551005263552, guid: 0259141e3a335b54daa796cc62b27979, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9408,6 +9420,7 @@ GameObject:
   - component: {fileID: 2131679752}
   - component: {fileID: 2131679751}
   - component: {fileID: 2131679750}
+  - component: {fileID: 2131679754}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -9499,6 +9512,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2131679754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131679749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0262c01480b754da7c3a75e2ca5d31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RestartBtn
 --- !u!4 &2134480228 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9cdfdb2b7a4ba0a4bb715af8e3784f1b, type: 3}

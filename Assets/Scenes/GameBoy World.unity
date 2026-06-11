@@ -2036,7 +2036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
       propertyPath: conversation.Array.size
-      value: 111
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4252380928577711631, guid: 4edd634fb3c9ffd45a4f788f1eb2ea18, type: 3}
       propertyPath: conversation.Array.data[0].clip
@@ -3410,6 +3410,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 46266617501861502, guid: 1d505d81882f1744a891109bf2efd86f, type: 3}
+      propertyPath: subtitleText
+      value: 
+      objectReference: {fileID: 155948810}
     - target: {fileID: 2907642965274488836, guid: 1d505d81882f1744a891109bf2efd86f, type: 3}
       propertyPath: m_Name
       value: Narrator Manager
